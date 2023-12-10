@@ -1,0 +1,27 @@
+.app {
+  margin: 30px auto;
+  width: 1000px;
+  height: 700px;
+}
+
+.players {
+  display: flex;
+  height: 100%; 
+}
+
+.buttons{
+  min-height: 700px;
+  max-height: 700px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  position: absolute;
+  top: 10%;
+  left: 47.5%;
+}
+.buttons >button {
+  padding: 10px;
+  border-radius: 10px;
+  font-weight: bold;
+  cursor: pointer;
+}
