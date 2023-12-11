@@ -14,7 +14,6 @@ export const StartOptions = ({setStartOptions,setStartModal}) =>{
       maxPoints: winPoint
     });
     setStartModal(false);
-    console.log('ddddd');
   };
 
   return (

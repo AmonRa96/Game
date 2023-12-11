@@ -18,8 +18,7 @@ export const App = () => {
   const [firstPlayerTotalPoints, setFirstPlayerTotalPoints] = useState(0);
   const [secondPlayerTotalPoints, setSecondPlayerTotalPoints] = useState(0);
   const [firstPlayerCurrentPoints, setFirstPlayerCurrentPoints] = useState(0);
-  const [secondPlayerCurrentPoints, setSecondPlayerCurrentPoints] =
-        useState(0);
+  const [secondPlayerCurrentPoints, setSecondPlayerCurrentPoints] = useState(0);
   const [someNum, setSomeNum] = useState(0);
   const [showModal, setShowModal] = useState(false);
   const [startModal, setStartModal] = useState(true);
@@ -68,17 +67,13 @@ export const App = () => {
   }, [someNum, diceValue]);
 
   useEffect(() => {
-    console.log(startOptions.winPoint, 'fff');
-
     if (
       firstPlayerTotalPoints >= startOptions.maxPoints ||
             secondPlayerTotalPoints >= startOptions.maxPoints
     ) {
-      console.log(firstPlayerTotalPoints, 'fff');
       setShowModal(true);
     }
   }, [firstPlayerTotalPoints, secondPlayerTotalPoints]);
-  console.log(showModal, 'showMod');
   return (
     <div
       className="app"
